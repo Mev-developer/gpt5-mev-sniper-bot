@@ -1,22 +1,26 @@
-# GPT-5 MEV Sniper Bot for Ethereum (2025 Build)
+GPT-5 MEV Bot - Usage Guide
+===========================
 
-This is a research tool built with GPT-5 and Web3.py to scan the Ethereum mempool for potential MEV (Miner Extractable Value) opportunities. It simulates front-running and arbitrage on popular DEX routers like Uniswap, Sushiswap, and Curve.
+This tool simulates MEV (Miner Extractable Value) opportunities across Ethereum DEXs using GPT-5-based logic.
 
-## Features
-- Mempool scanning
-- Live token price detection via on-chain routes
-- GPT-5-driven trade scoring logic (mocked)
-- Dry-run simulation with RPC endpoints
+Instructions:
+-------------
+1. Unzip the archive to any folder
+2. Open a terminal or command prompt in that folder
+3. Run the following command:
 
-## Installation
-1. Download the latest `.zip` build from Releases
-2. Extract it
-3. Open `run_gpt5_mev.py` in `/bin` and follow README.pdf for setup
+   python runner.py
 
-> Recommended: Python 3.10+, Web3.py, requests
+4. The terminal will display mempool monitoring and arbitrage simulation
+5. Status messages will also be saved in execution_log.txt
 
-## Legal Notice
-This tool is intended for educational and testing purposes only. Use at your own risk.
+Requirements:
+-------------
+- Python 3.10 or higher
+- Internet connection
+- Optional: your own RPC endpoint (Infura, Alchemy, etc.)
 
-
-# gpt5-mev-sniper-bot
+Note:
+-----
+This version runs in dry-run mode and does not perform real transactions.  
+For educational and research purposes only.
